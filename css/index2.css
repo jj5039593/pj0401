@@ -1,0 +1,94 @@
+@charset "utf-8";
+@import url(common/reset.css);
+
+.section{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.section .sec-con{
+    flex: 0 1 800px;
+    height: 300px;
+    position: relative;
+    overflow: hidden;
+}
+.section .sec-con .gallery{
+    width: 250%;
+    height: inherit;
+    position: absolute;
+    left: 0;
+}
+.section .sec-con .gallery>ul{
+    height: inherit;
+    display: flex;
+    justify-content: space-between;
+    gap: 1px ;
+}
+.section .sec-con .gallery>ul>li{
+    flex: 1;
+    height: inherit;
+    border: 1px solid;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.section .center-btn{
+    width: 100%;
+    height: auto;
+    box-sizing: border-box;
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    display: flex;
+    justify-content: space-between;
+    padding: 0 10px;
+}
+.section .center-btn span{
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: brown;
+}
+.section .center-btn span:hover{
+    background-color: brown;
+    cursor: pointer;
+}
+.section .bCon{
+    width: 100%;
+    height: auto;
+    border: 0;
+    box-sizing: border-box;
+    position: absolute;
+    left: 0;
+    bottom: 10px;
+    display: flex;
+    justify-content: center;
+}
+.section .sec-con .bCon .items{
+    width: auto;
+    height: auto;
+}
+.section .sec-con .bCon .items>ul{
+    display: flex;
+    justify-content: space-between;
+}
+.section .sec-con .bCon .items>ul>li{
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    border: 1px solid rgb(141, 98, 98)
+}
+.section .sec-con .bCon .items>ul>li:hover{
+    background-color: rgb(141, 98, 98);
+    cursor: pointer;
+}
+.on{
+    background-color:rgb(141, 98, 98);
+    border: 2px solid rgb(138, 71, 71);
+    box-sizing: border-box;
+}
+
